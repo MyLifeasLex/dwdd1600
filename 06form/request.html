@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alexandra Gaspard">
+    <meta name="name" content="Alexandra Gaspard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="lava.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--Start page header-->
+    <header>
+        <span>Loopy Lava</span>
+    </header>
+    <!--Start navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">History</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="cleaning.html">Cleaning</a></li>
+            <li><a href="wax.html">Wax Treatment</a></li>
+            <li><a href="water.html">Water Treatment</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="ref.html">References</a></li>
+            <li class="active"><a href="request.html">Request Form</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <main>
+            <h1>Restoration Request Form</h1>
+            <form method="get" class="ll" action="thanks.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label>First Name:<input type="text" name="fname" required> </label>
+                <label>Email Address:<input type="email" id="email" name="email" required> </label>
+                <label>Cell Number:<input type="tel" name="phone" required placeholder="555-555-5555"> </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Lamp Details</legend>
+                <p>What type of lava lamp do you have?</p>
+
+                <label> <input type="radio" name="lampType" value="modern" required> Modern</label>
+                <label><input type="radio" name="lampType" value="vintage">Vintage</label>
+                <label><input type="radio" name="lampType" value="unsure">Unsure</label>
+
+                <label>Lamp Size
+                    <select name="lampSize">
+                        <option value="">Please Select</option>
+                        <option value="14.5">14.5 Inch</option>
+                        <option value="16.3">16.3 Inch</option>
+                        <option value="grande">Grande (27 Inch)</option>
+                    </select>
+                </label>
+            </fieldset>
+                <p>services are you interested in?</p>
+            <fieldset>
+                <label><input type="checkbox" name="service" value="cleaning"> Cleaning</label>
+                <label><input type="checkbox" name="service" value="wax"> Wax Treatment </label>
+                <label><input type="checkbox" name="service" value="water">Water Treatment</label>
+                <label><input type="checkbox" name="service" value="electrical">Electrical Repair</label>
+                <label><input type="checkbox" name="service" value="full">Full Restoration</label>
+            </fieldset>
+            <label>Comments
+                <textarea name="Comments"></textarea>
+            </label>
+            <input type="submit" value="Send Help Request">
+        </form>
+    </main>
+    <!--Start Footer-->
+    <footer>
+        <p>&copy; 2026 &bull; Alexandra Gaspard &bull; Web Essentials</p>
+    </footer>
+</body>
+
+
+</html>
